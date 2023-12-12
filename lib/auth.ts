@@ -1,6 +1,5 @@
 import {
     getServerSession,
-    type DefaultSession,
     type NextAuthOptions,
   } from "next-auth";
   import GoogleProvider from "next-auth/providers/google";
@@ -14,7 +13,10 @@ import {
         clientId: process.env.GOOGLE_CLIENT_ID!,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
       }),
+      
     ],
+    secret:process.env.NEXTAUTH_SECRET,
+    
   };
   
   

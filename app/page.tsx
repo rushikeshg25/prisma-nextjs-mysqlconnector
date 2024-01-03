@@ -1,5 +1,12 @@
+import Loginbutton from "@/components/Login/login-button";
 
 
 export default function Home() {
-  return <div>Rushikesh</div>;
+
+  const isLoggedIn=false;
+
+  return <div>
+    <div className="flex justify-center">{isLoggedIn?<>Logged In</>:<>Not Logged In</>}</div>
+    <div><Loginbutton/></div>
+  </div>;
 }

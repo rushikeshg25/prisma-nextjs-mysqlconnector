@@ -5,7 +5,7 @@ import NextAuth from "next-auth"
  
 export default auth((req) => {
   // req.auth
-//   console.log(req)
+  console.log(req)
 })
 
 export const config = {
